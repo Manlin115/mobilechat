@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Document</title>
+    <title>ChatApplication</title>
 </head>
 <body>
     <div class="hero">
@@ -24,13 +24,27 @@
         </nav>
         <div class="content">
             <h1 class="anim">Make <br>New Friends</h1>
-            <p class="anim">Connect with serendipity, Where every message sparks a new adventure.In the realm of randomness, conversations unfold, weaving stories untold."</p>
-                <a href="main.html" class="login-btn anim">Join Now</a>
+            <p class="anim">Connect with serendipity, Where every message sparks a new adventure.In the realm of randomness, conversations unfold, weaving stories untold.</p>
+            <a href="main.html" class="login-btn anim">Join Now</a>
         </div>
         <img src="socially_img/pic.png" class="feature-img anim">
     </div>
+
+    <div class="side-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="working.html">How it works</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </div>
+
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="code.js"></script>
-   
+    <script type="text/javascript">
+        document.querySelector('.menu-icon').addEventListener('click', function () {
+            document.querySelector('.side-nav').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

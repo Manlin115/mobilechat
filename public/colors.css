@@ -7,14 +7,14 @@
 body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image:linear-gradient(#D4F0F0,#ECD5E3);
     background-size: cover;
 	background-size: 450px 848px;
 	background-repeat: no-repeat;
-	/* background-position: center; */
+	background-position: center;
 }
 
 .app {
@@ -189,4 +189,42 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
+}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .app {
+        max-width: 100%;
+        max-height: 100vh;
+    }
+
+    .screen .form {
+        width: 90%;
+        margin-top: 180px;
+    }
+
+    .screen h2 {
+        font-size: 24px;
+    }
+
+    .chat-screen .header {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    .chat-screen .header .logo {
+        font-size: 16px;
+    }
+
+    .chat-screen .header button {
+        padding: 3px 8px;
+        font-size: 14px;
+    }
+
+    .chat-screen .typebox input {
+        font-size: 16px;
+    }
+
+    .chat-screen .typebox button {
+        font-size: 14px;
+    }
 }
